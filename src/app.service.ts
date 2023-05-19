@@ -21,7 +21,7 @@ export class AppService {
      * Return response
      */
     return {
-      status: 'Should send sms!',
+      status: 'SMS sent ',
     };
   }
 }

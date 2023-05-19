@@ -22,7 +22,7 @@ import { RateLimitModule } from '@app/rate-limit';
     ThrottlerModule.forRoot({
       ttl: 60,
       limit: 1300,
-      // storage: new ThrottlerStorageRedisService(process.env.REDIS_DB),
+      storage: new ThrottlerStorageRedisService(process.env.REDIS_DB),
     }),
 
     RedisModule.forRoot({
